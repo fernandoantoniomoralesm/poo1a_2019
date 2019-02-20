@@ -1,0 +1,50 @@
+3-se ha creado la carpeta aprendiendo_git dentro de la carpeta fernando_morales
+4-se ha iniciado un nuevo repositorio con git init
+5-se configuro el repositorio con git config user.name fer y git config user.email fernando.morales1@catolica.edu.sv
+6-git status nos muestra que no hay archivos comprometidos, y que no hay archivos en el area
+de preparacion.
+7-se creo el archivo texto1.txt con la palabra bienvenido (mkdir texto1.txt).
+8-con git add se agrego texto1.txt al area de preparacion.
+9-git commit -m se agrego el primer commit
+10-git log, nos muestra el historial de versiones que se han realizado. nos brinda informacion
+de quien fue el autor, la fecha y la hora de la modificacion, asi como el mensaje descriptivo del commit.
+11-se han creado el archivo texto2.txt y texto3.txt (mkdir)
+12-fue añadida nueva informacion al archivo texto1.txt
+13-git diff nos muestra la nueva informacion que ha sido agregada al archivo texto1.txt.
+14-git add t* hemos agregado al area de preparacion los archivos que inician con la letra
+t.
+15-git diff --staged nos muestra las diferencias que existen en los archivos que se encuentran
+en el area de preparacion.
+16-git reset texto2.txt este archivo ha sido quitado de el area de preparacion y ahora se
+convierte en un archivo que no tiene ningun seguimiento.
+17-git commit -m "este es el segundo commit para el archivo texto3.txt"
+18-git log nos mostro el historial de los commits que se han realizado hasta el momento
+y nos da informacion de los mensajes que contienen.
+19-se agrego nuevo texto al archivo texto2.txt
+20-se copio informacion de el archivo texto1.txt.
+21-se nos muestra la nueva informacion que ha sido agregada al archivo texto2.txt (git diff)
+22-git add texto2.txt se agrego el trabajo al area de preparacion.
+23-se realizo el tercer commit para el archivo texto2.txt.
+24-git log --oneline
+65a06bf (HEAD) este es el tercer commit para el archivo texto2.txt
+7fe8dd8 este es el segundo commit para el archivo texto3.txt
+990c028 este es el primer commit realizado
+dc4a864 El primer commit realizado, con el archivo texto1.txt que contiene la palabra bienvenido
+git checkout 990c028
+25-no es posible verificar el estado del repositorio y el historial debido a que
+actualmente nos encontramos en una cabeza separada.
+26-git checkout, se regreso a la rama en su posicion normal.
+27-git branch rama2, se creo esta nueva rama de trabajo.
+28-git checkout rama2
+Switched to branch 'rama2' se cambio a la rama2.
+29-se ha creado un nuevo directorio "directorio2" con el archivo "texto4.txt",
+que contiene una pequeña linea.
+30-git add texto4.txt, git commit -m
+31-nos muestra el historial de commits con la diferencia que ahora, nos 
+muestra a la rama2 a la que pertenece el ultimo commit realizado.
+32- se verifico el historial y los contenidos de la rama master(git checkout, git log).
+33-git merge rama2
+Already up to date.
+ 
+
+
